@@ -398,6 +398,10 @@ from django.template import loader
 
 def pdf(request):
     dgbbop(request)
+    #changed after deploying
+    path_wkthmltopdf = b'C:\Program Files\wkhtmltopdf\\bin\wkhtmltopdf.exe'
+    config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)
+    #changed after deploying
     projectUrl = request.get_host() + '/dgbbop'
     pdf = pdfkit.from_url(projectUrl, False)
     # pdf = pdfkit.from_file('dgbbop.html', 'out.pdf')
