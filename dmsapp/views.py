@@ -403,7 +403,7 @@ def pdf(request):
     config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)
     #changed after deploying
     projectUrl = request.get_host() + '/dgbbop'
-    pdf = pdfkit.from_url(projectUrl, False)
+    pdf = pdfkit.from_url(projectUrl, False, configuration=config)
     # pdf = pdfkit.from_file('dgbbop.html', 'out.pdf')
     response = HttpResponse(pdf,content_type='application/pdf')
     response['Content-Disposition'] = 'attachment; filename="result.pdf"'
