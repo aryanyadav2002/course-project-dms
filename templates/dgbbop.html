@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Results-DMS</title>
+    <link href="/static/style.css"  rel="stylesheet" >
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+  </head>
+  <body>
+<div class="input-group w-50 ml-1">
+    <a href="/dgbb" class="mx-3"><span class="input-group-text" id="basic-addon1">Back</span></a>
+    <a href="/"><span class="input-group-text" id="basic-addon1">Home</span></a>
+    
+    </div>
+<br>
+<div id='ansdiv'>
+    <div class="mbox border border-success rounded-5 ">
+      <div class="mbox-ans p-1">{{ansvs.op}}
+  
+      </div>
+      <hr>
+      <h1 class="p-1 ans">{{ansvs.skf}}</h1>
+      <hr>
+      <div class="mbox">
+        <table class="table table-bordered">
+        
+          <tbody>
+            <tr>
+              <th scope="row">{{ansvs.skfr}}</th>
+              <td>{{ansvs.skf}}</td>
+            </tr>
+            <tr>
+              <th scope="row">{{ansvs.dr}}</th>
+              <td>{{ansvs.d}}</td>
+            </tr>
+            <tr>
+              <th scope="row">{{ansvs.d1r}}</th>
+              <td>{{ansvs.D1}}</td>
+            </tr>
+            <tr>
+              <th scope="row">{{ansvs.drr}}</th>
+              <td>{{ansvs.D}}</td>
+            </tr>
+            <tr>
+              <th scope="row">{{ansvs.d2r}}</th>
+              <td>{{ansvs.D2}}</td>
+            </tr>
+            <tr>
+              <th scope="row">{{ansvs.br}}</th>
+              <td>{{ansvs.B}}</td>
+            </tr>
+            <tr>
+              <th scope="row">{{ansvs.rr}}</th>
+              <td>{{ansvs.r}}</td>
+            </tr>
+            <tr>
+              <th scope="row">{{ansvs.r1r}}</th>
+              <td>{{ansvs.r1}}</td>
+            </tr>
+            <tr>
+              <th scope="row">{{ansvs.cor}}</th>
+              <td>{{ansvs.co}}</td>
+            </tr>
+            <tr>
+              <th scope="row">{{ansvs.cr}}</th>
+              <td>{{ansvs.c}}</td>
+            </tr>
+            <tr>
+              <th scope="row">{{ansvs.spr}}</th>
+              <td>{{ansvs.sp}}</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="mbox">
+      <h1 class="display-4">{{ansvs.cal}}</h1>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">{{ansvs.t1}}</div>
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <th scope="row">{{ansvs.fbc}}</th>
+                  <td>{{ansvs.fbca}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{ansvs.fafr}}</th>
+                  <td>{{ansvs.fafra}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{ansvs.echk}}</th>
+                </tr>
+                <tr>
+                  <th scope="row">{{ansvs.xx}}</th>
+                  <td>{{ansvs.xxa}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{ansvs.yy}}</th>
+                  <td>{{ansvs.yya}}</td>
+                </tr>
+              </tbody>
+            </table>  
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">{{ansvs.t2}}
+            </div>
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <th scope="row">{{ansvs.pes}}</th>
+                  <td>{{ansvs.pea}}</td>
+                </tr>
+              </tbody>
+            </table>  
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">{{ansvs.t3}}
+            </div>
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <th scope="row">{{ansvs.l10}}</th>
+                  <td>{{ansvs.l10a}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{ansvs.cd}}</th>
+                  <td>{{ansvs.cda}}</td>
+                </tr>
+              </tbody>
+            </table>  
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <br>
+  <a href="/pdf" class="mx-5 " style="float: right;"><span class="input-group-text btn btn-outline-danger"  id="basic-addon1">Download PDF</span></a>
+  <br>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="text-muted">© 2021 Aryan Yadav</span>
+      </div>
+    </footer>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
